@@ -1,12 +1,27 @@
-<button ui-serf='reports'> Check out the River Fishing Reports </button>
+
 <form>
 	<div>
-		<ul>
-			<li>Cloud Cover	{{weatherData.clouds.all}}%</li>
-			<li>Barometric Pressure {{weatherData.main.pressure}}</li>
-			<li>Current Tem{{weatherData.main.temp}}
+
+  
+
+		<ul class='weather'>
+			
+     <weather-conversion
+          pressure='weatherData.main.pressure'
+          temp='weatherData.main.temp'
+          sunrise='weatherData.sys.sunrise'
+          sunset='weatherData.sys.sunset'>
+     </weather-conversion>
+     <li>Cloud Cover	{{weatherData.clouds.all}}%</li><br>
+			<li> Humidity {{weatherData.main.humidity}}%</li><br>
+			<li> Wind Speed {{weatherData.wind.speed}}mph</li><br>
+
+
+          
+            
+
 
 		</ul>
 	</div> 
 
-</form>fo
+</form>

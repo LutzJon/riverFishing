@@ -10,6 +10,11 @@ angular.module('sacReport',['ui.router', 'firebase' ])
          	url: '/weather',
          	controller: 'weatherCtrl',
          	templateUrl: '/templates/weather.html',
+            resolve:{
+                weatherData: function(weatherService){
+                    return weatherService.getWeather();
+                }
+            }
         })
          .state('reports', {
          	url:'/reports', 

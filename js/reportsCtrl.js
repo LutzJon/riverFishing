@@ -12,8 +12,12 @@ angular.module('sacReport').controller('reportsCtrl', function( $scope, $firebas
    	     }
    	     console.log(newReportObj);
    	     $scope.reports.$add(newReportObj);
+           $scope.report = {};
+           console.log($scope.report);
    };
    $scope.reports.$loaded().then(function(reports){
    	console.log('reports worked');
+           
+      
    });
    });

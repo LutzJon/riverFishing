@@ -10,5 +10,7 @@ $scope.test = 'this is the scope on reportCtrl';
  $scope.addComment = function(){
 
  	 $scope.comments.$add($scope.newComment);
+ 	 $scope.newComment={};
+ 	// console.log($scope.newComment);
  };
 });

@@ -2,6 +2,8 @@
 <html >
 <head>
 	<title>SacFishing</title>
+	<!-- Latest compiled and minified CSS -->
+
 
 <link rel="stylesheet" href="style.css">
 
@@ -13,7 +15,7 @@
 		<header id="header">
 			<div class="innertube">
 
-				<h1>Sac Fishin N Chico </h1>
+				<h1> Sacramento River Fishing Condtions And Reports Near Chico</h1>
 			</div>
 		</header>
 		
@@ -21,8 +23,9 @@
 		
 		<div id = "main">
 		  <div class ="mainheader">
-		   <div></div>
-		   <div></div>
+		   <div><button class='myButton' ui-sref='reports'>Fishing reports</button> <button class='myButton' ui-sref='weather'>Weather Conditions</button></div>
+
+		   
 		  </div>
 
             <div class='container' ui-view></div>
@@ -38,6 +41,8 @@
    <script   src="js/reportsCtrl.js"></script>
    <script   src="js/reportServ.js"></script>
    <script   src="js/weatherServ.js"></script>
+   <script src="js/weatherConversion-Directives.js"></script>
+
 
 
 
