@@ -1,0 +1,14 @@
+<button ui-sref='weather'> Back to fishing Conditions</button>
+<button ui-sref='reports'> Back all reports</button>
+<h1>{{report.name}}</h1>
+<p>{{report.creator}}</p>
+<form>
+	<input type="text" placeholder="Your name" ng-model='newComment.username'>
+	<input type="text" placeholder="comment" ng-model='newComment.comment'>
+	<button ng-click='addComment()'>Send It</button>
+</form>
+<ul>
+<li ng-repeat='comment in comments'>
+	{{comment.username}} : {{comment.comment}}
+</li>
+</ul>
