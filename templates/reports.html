@@ -1,14 +1,15 @@
-<div class='report-head'> <h3> Let us know how your day on the river went </h3> </div>
-
+<div class='reportHeader'>
+  <div class='reportSubHeader'> <h3> Let us know how your day on the river went </h3> </div>
+</div>
 
 
 <form>
-	<input class="report-msg" type='text' ng-model='report.name' placeholder='How was it?'/>
+	<input class='msg'type='text' ng-model='report.name' placeholder='How was it?'/>
 	<input type='text' ng-model='report.creator' placeholder='your name'/>
 	<button ng-click='addReport()'>Submit Report</button>
 	
 </form>
-<ul>
+<ul class='box'>
   <li class= 'comment'ng-repeat='report in reports'>
     <a ui-sref='report({reportId: report.$id})' >{{report.name}} by: {{report.creator}}</a>
 

@@ -1,8 +1,7 @@
 
 <form>
-	<div>
 
-  
+
 
 		<ul class='weather'>
 			
@@ -12,9 +11,13 @@
           sunrise='weatherData.sys.sunrise'
           sunset='weatherData.sys.sunset'>
      </weather-conversion>
-     <li>Cloud Cover	{{weatherData.clouds.all}}%</li><br>
-			<li> Humidity {{weatherData.main.humidity}}%</li><br>
-			<li> Wind Speed {{weatherData.wind.speed}}mph</li><br>
+     <li>Cloud Cover:	{{weatherData.clouds.all}}%</li><br>
+			<li> Humidity: {{weatherData.main.humidity}}%</li><br>
+			<li> Wind Speed: {{weatherData.wind.speed}}mph</li><br>
+
+	<div class='second'> 
+	</div>
+			
 
 
           
@@ -23,5 +26,6 @@
 
 		</ul>
 	</div> 
+
 
 </form>

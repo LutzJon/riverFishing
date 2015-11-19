@@ -1,12 +1,13 @@
-
-<div class='report-head' ><h1>{{report.name}}</h1></div>
-<div class='report-author'><p>{{report.creator}}</p></div>
+<div class='reportHeader'>
+   <div class='report-head' ><h1>{{report.name}}</h1></div>
+   <div class='report-author'><p>{{report.creator}}</p></div>
+</div>
 <form>
 	<input type="text" placeholder="Your name" ng-model='newComment.username'>
 	<input type="text" placeholder="comment" ng-model='newComment.comment'>
 	<button ng-click='addComment()'>Send It</button>
 </form>
-<ul>
+<ul class="box">
 <li class="comment" ng-repeat='comment in comments'>
 	{{comment.username}} : {{comment.comment}}
 </li>
